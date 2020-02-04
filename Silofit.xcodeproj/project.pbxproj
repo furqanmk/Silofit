@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA7C968123E9ED7100710D21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C968023E9ED7100710D21 /* AppDelegate.swift */; };
+		CA7C968323E9ED7100710D21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C968223E9ED7100710D21 /* SceneDelegate.swift */; };
+		CA7C968523E9ED7100710D21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C968423E9ED7100710D21 /* ContentView.swift */; };
+		CA7C968723E9ED7500710D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7C968623E9ED7500710D21 /* Assets.xcassets */; };
+		CA7C968A23E9ED7500710D21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7C968923E9ED7500710D21 /* Preview Assets.xcassets */; };
+		CA7C968D23E9ED7500710D21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7C968B23E9ED7500710D21 /* LaunchScreen.storyboard */; };
+		CA7C969823E9ED7600710D21 /* SilofitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C969723E9ED7600710D21 /* SilofitTests.swift */; };
+		CA7C96A323E9ED7600710D21 /* SilofitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C96A223E9ED7600710D21 /* SilofitUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA7C969423E9ED7600710D21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA7C967523E9ED7100710D21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA7C967C23E9ED7100710D21;
+			remoteInfo = Silofit;
+		};
+		CA7C969F23E9ED7600710D21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA7C967523E9ED7100710D21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA7C967C23E9ED7100710D21;
+			remoteInfo = Silofit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA7C967D23E9ED7100710D21 /* Silofit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Silofit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA7C968023E9ED7100710D21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA7C968223E9ED7100710D21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CA7C968423E9ED7100710D21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA7C968623E9ED7500710D21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA7C968923E9ED7500710D21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA7C968C23E9ED7500710D21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA7C968E23E9ED7500710D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA7C969323E9ED7600710D21 /* SilofitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilofitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA7C969723E9ED7600710D21 /* SilofitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilofitTests.swift; sourceTree = "<group>"; };
+		CA7C969923E9ED7600710D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA7C969E23E9ED7600710D21 /* SilofitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilofitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA7C96A223E9ED7600710D21 /* SilofitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilofitUITests.swift; sourceTree = "<group>"; };
+		CA7C96A423E9ED7600710D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA7C967A23E9ED7100710D21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA7C969023E9ED7600710D21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA7C969B23E9ED7600710D21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA7C967423E9ED7100710D21 = {
+			isa = PBXGroup;
+			children = (
+				CA7C967F23E9ED7100710D21 /* Silofit */,
+				CA7C969623E9ED7600710D21 /* SilofitTests */,
+				CA7C96A123E9ED7600710D21 /* SilofitUITests */,
+				CA7C967E23E9ED7100710D21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA7C967E23E9ED7100710D21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA7C967D23E9ED7100710D21 /* Silofit.app */,
+				CA7C969323E9ED7600710D21 /* SilofitTests.xctest */,
+				CA7C969E23E9ED7600710D21 /* SilofitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA7C967F23E9ED7100710D21 /* Silofit */ = {
+			isa = PBXGroup;
+			children = (
+				CA7C968023E9ED7100710D21 /* AppDelegate.swift */,
+				CA7C968223E9ED7100710D21 /* SceneDelegate.swift */,
+				CA7C968423E9ED7100710D21 /* ContentView.swift */,
+				CA7C968623E9ED7500710D21 /* Assets.xcassets */,
+				CA7C968B23E9ED7500710D21 /* LaunchScreen.storyboard */,
+				CA7C968E23E9ED7500710D21 /* Info.plist */,
+				CA7C968823E9ED7500710D21 /* Preview Content */,
+			);
+			path = Silofit;
+			sourceTree = "<group>";
+		};
+		CA7C968823E9ED7500710D21 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CA7C968923E9ED7500710D21 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA7C969623E9ED7600710D21 /* SilofitTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA7C969723E9ED7600710D21 /* SilofitTests.swift */,
+				CA7C969923E9ED7600710D21 /* Info.plist */,
+			);
+			path = SilofitTests;
+			sourceTree = "<group>";
+		};
+		CA7C96A123E9ED7600710D21 /* SilofitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA7C96A223E9ED7600710D21 /* SilofitUITests.swift */,
+				CA7C96A423E9ED7600710D21 /* Info.plist */,
+			);
+			path = SilofitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA7C967C23E9ED7100710D21 /* Silofit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA7C96A723E9ED7600710D21 /* Build configuration list for PBXNativeTarget "Silofit" */;
+			buildPhases = (
+				CA7C967923E9ED7100710D21 /* Sources */,
+				CA7C967A23E9ED7100710D21 /* Frameworks */,
+				CA7C967B23E9ED7100710D21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Silofit;
+			productName = Silofit;
+			productReference = CA7C967D23E9ED7100710D21 /* Silofit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA7C969223E9ED7600710D21 /* SilofitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA7C96AA23E9ED7600710D21 /* Build configuration list for PBXNativeTarget "SilofitTests" */;
+			buildPhases = (
+				CA7C968F23E9ED7600710D21 /* Sources */,
+				CA7C969023E9ED7600710D21 /* Frameworks */,
+				CA7C969123E9ED7600710D21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA7C969523E9ED7600710D21 /* PBXTargetDependency */,
+			);
+			name = SilofitTests;
+			productName = SilofitTests;
+			productReference = CA7C969323E9ED7600710D21 /* SilofitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA7C969D23E9ED7600710D21 /* SilofitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA7C96AD23E9ED7600710D21 /* Build configuration list for PBXNativeTarget "SilofitUITests" */;
+			buildPhases = (
+				CA7C969A23E9ED7600710D21 /* Sources */,
+				CA7C969B23E9ED7600710D21 /* Frameworks */,
+				CA7C969C23E9ED7600710D21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA7C96A023E9ED7600710D21 /* PBXTargetDependency */,
+			);
+			name = SilofitUITests;
+			productName = SilofitUITests;
+			productReference = CA7C969E23E9ED7600710D21 /* SilofitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA7C967523E9ED7100710D21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Silofit;
+				TargetAttributes = {
+					CA7C967C23E9ED7100710D21 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					CA7C969223E9ED7600710D21 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = CA7C967C23E9ED7100710D21;
+					};
+					CA7C969D23E9ED7600710D21 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = CA7C967C23E9ED7100710D21;
+					};
+				};
+			};
+			buildConfigurationList = CA7C967823E9ED7100710D21 /* Build configuration list for PBXProject "Silofit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA7C967423E9ED7100710D21;
+			productRefGroup = CA7C967E23E9ED7100710D21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA7C967C23E9ED7100710D21 /* Silofit */,
+				CA7C969223E9ED7600710D21 /* SilofitTests */,
+				CA7C969D23E9ED7600710D21 /* SilofitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA7C967B23E9ED7100710D21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA7C968D23E9ED7500710D21 /* LaunchScreen.storyboard in Resources */,
+				CA7C968A23E9ED7500710D21 /* Preview Assets.xcassets in Resources */,
+				CA7C968723E9ED7500710D21 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA7C969123E9ED7600710D21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA7C969C23E9ED7600710D21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA7C967923E9ED7100710D21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA7C968123E9ED7100710D21 /* AppDelegate.swift in Sources */,
+				CA7C968323E9ED7100710D21 /* SceneDelegate.swift in Sources */,
+				CA7C968523E9ED7100710D21 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA7C968F23E9ED7600710D21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA7C969823E9ED7600710D21 /* SilofitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA7C969A23E9ED7600710D21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA7C96A323E9ED7600710D21 /* SilofitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA7C969523E9ED7600710D21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA7C967C23E9ED7100710D21 /* Silofit */;
+			targetProxy = CA7C969423E9ED7600710D21 /* PBXContainerItemProxy */;
+		};
+		CA7C96A023E9ED7600710D21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA7C967C23E9ED7100710D21 /* Silofit */;
+			targetProxy = CA7C969F23E9ED7600710D21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA7C968B23E9ED7500710D21 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA7C968C23E9ED7500710D21 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA7C96A523E9ED7600710D21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA7C96A623E9ED7600710D21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA7C96A823E9ED7600710D21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Silofit/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Silofit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silofit.Silofit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA7C96A923E9ED7600710D21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Silofit/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Silofit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silofit.Silofit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA7C96AB23E9ED7600710D21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SilofitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silofit.SilofitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Silofit.app/Silofit";
+			};
+			name = Debug;
+		};
+		CA7C96AC23E9ED7600710D21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SilofitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silofit.SilofitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Silofit.app/Silofit";
+			};
+			name = Release;
+		};
+		CA7C96AE23E9ED7600710D21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SilofitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silofit.SilofitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Silofit;
+			};
+			name = Debug;
+		};
+		CA7C96AF23E9ED7600710D21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SilofitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silofit.SilofitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Silofit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA7C967823E9ED7100710D21 /* Build configuration list for PBXProject "Silofit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA7C96A523E9ED7600710D21 /* Debug */,
+				CA7C96A623E9ED7600710D21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA7C96A723E9ED7600710D21 /* Build configuration list for PBXNativeTarget "Silofit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA7C96A823E9ED7600710D21 /* Debug */,
+				CA7C96A923E9ED7600710D21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA7C96AA23E9ED7600710D21 /* Build configuration list for PBXNativeTarget "SilofitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA7C96AB23E9ED7600710D21 /* Debug */,
+				CA7C96AC23E9ED7600710D21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA7C96AD23E9ED7600710D21 /* Build configuration list for PBXNativeTarget "SilofitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA7C96AE23E9ED7600710D21 /* Debug */,
+				CA7C96AF23E9ED7600710D21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA7C967523E9ED7100710D21 /* Project object */;
+}
