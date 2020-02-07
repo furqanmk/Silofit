@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A05225472671D757E0AA98E4 /* Pods_Silofit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57ACCFFE7FF6A2E8CEFCEB7 /* Pods_Silofit.framework */; };
 		CA7C968123E9ED7100710D21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C968023E9ED7100710D21 /* AppDelegate.swift */; };
-		CA7C968323E9ED7100710D21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C968223E9ED7100710D21 /* SceneDelegate.swift */; };
 		CA7C968723E9ED7500710D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7C968623E9ED7500710D21 /* Assets.xcassets */; };
 		CA7C968D23E9ED7500710D21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7C968B23E9ED7500710D21 /* LaunchScreen.storyboard */; };
 		CA7C969823E9ED7600710D21 /* SilofitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C969723E9ED7600710D21 /* SilofitTests.swift */; };
@@ -76,7 +75,6 @@
 		A8FD92F10263AA60C845903A /* Pods-Silofit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Silofit.debug.xcconfig"; path = "Target Support Files/Pods-Silofit/Pods-Silofit.debug.xcconfig"; sourceTree = "<group>"; };
 		CA7C967D23E9ED7100710D21 /* Silofit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Silofit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7C968023E9ED7100710D21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA7C968223E9ED7100710D21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CA7C968623E9ED7500710D21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA7C968C23E9ED7500710D21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA7C968E23E9ED7500710D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -167,7 +165,6 @@
 				A8FD92F10263AA60C845903A /* Pods-Silofit.debug.xcconfig */,
 				584F22A6F8930BC6ED0D7113 /* Pods-Silofit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -197,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				CA7C968023E9ED7100710D21 /* AppDelegate.swift */,
-				CA7C968223E9ED7100710D21 /* SceneDelegate.swift */,
 				CA7C96B023E9EE4500710D21 /* RootCoordinator.swift */,
 				CA7C96B423E9F16400710D21 /* Modules */,
 				CA7C968623E9ED7500710D21 /* Assets.xcassets */,
@@ -541,7 +537,6 @@
 				CA7C96B123E9EE4500710D21 /* RootCoordinator.swift in Sources */,
 				CA7C96F923E9F16400710D21 /* LoginProtocols.swift in Sources */,
 				CA7C96F223E9F16400710D21 /* ListViewController.swift in Sources */,
-				CA7C968323E9ED7100710D21 /* SceneDelegate.swift in Sources */,
 				CA7C96DF23E9F16400710D21 /* HomeInteractor.swift in Sources */,
 				CA7C96E523E9F16400710D21 /* DetailsProtocols.swift in Sources */,
 				CA7C96E323E9F16400710D21 /* HomePresenter.swift in Sources */,

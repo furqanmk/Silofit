@@ -10,15 +10,15 @@ import UIKit
 
 final class RootCoordinator {
     private var loggedIn: Bool {
-        true
+        false
     }
 
     /// <#Description#>
     func start() -> UIViewController {
         if loggedIn {
-            return onboardingModule()
-        } else {
             return homeModule()
+        } else {
+            return onboardingModule()
         }
     }
     
