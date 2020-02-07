@@ -1,0 +1,17 @@
+.DS_Store
+
+## Build generated
+build/
+DerivedData
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+xcuserdata
+
+## Other
+*.xccheckout
+*.xcuserstate
+
+## cocoapods
+Pods

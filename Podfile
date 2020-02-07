@@ -1,19 +1,17 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'Silofit' do
-  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for Silofit
 
-  target 'SilofitTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  # Google Maps
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
 
-  target 'SilofitUITests' do
-    # Pods for testing
-  end
+  # Firebase
+  pod 'FBSDKLoginKit'
 
+  # Kingfisher
+  pod 'Kingfisher'
 end

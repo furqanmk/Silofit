@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A05225472671D757E0AA98E4 /* Pods_Silofit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57ACCFFE7FF6A2E8CEFCEB7 /* Pods_Silofit.framework */; };
 		CA7C968123E9ED7100710D21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C968023E9ED7100710D21 /* AppDelegate.swift */; };
 		CA7C968323E9ED7100710D21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C968223E9ED7100710D21 /* SceneDelegate.swift */; };
 		CA7C968723E9ED7500710D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7C968623E9ED7500710D21 /* Assets.xcassets */; };
@@ -71,6 +72,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		584F22A6F8930BC6ED0D7113 /* Pods-Silofit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Silofit.release.xcconfig"; path = "Target Support Files/Pods-Silofit/Pods-Silofit.release.xcconfig"; sourceTree = "<group>"; };
+		A8FD92F10263AA60C845903A /* Pods-Silofit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Silofit.debug.xcconfig"; path = "Target Support Files/Pods-Silofit/Pods-Silofit.debug.xcconfig"; sourceTree = "<group>"; };
 		CA7C967D23E9ED7100710D21 /* Silofit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Silofit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7C968023E9ED7100710D21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA7C968223E9ED7100710D21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +124,7 @@
 		CA7C96DD23E9F16400710D21 /* OnboardingBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingBuilder.swift; sourceTree = "<group>"; };
 		CA7C96DE23E9F16400710D21 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CADD349F23EC739600E35B34 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		D57ACCFFE7FF6A2E8CEFCEB7 /* Pods_Silofit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Silofit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05225472671D757E0AA98E4 /* Pods_Silofit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +153,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A79952CDD47C63BF77A495D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D57ACCFFE7FF6A2E8CEFCEB7 /* Pods_Silofit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1595B9F5336EA6965C05F1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8FD92F10263AA60C845903A /* Pods-Silofit.debug.xcconfig */,
+				584F22A6F8930BC6ED0D7113 /* Pods-Silofit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CA7C967423E9ED7100710D21 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +178,8 @@
 				CA7C969623E9ED7600710D21 /* SilofitTests */,
 				CA7C96A123E9ED7600710D21 /* SilofitUITests */,
 				CA7C967E23E9ED7100710D21 /* Products */,
+				C1595B9F5336EA6965C05F1A /* Pods */,
+				8A79952CDD47C63BF77A495D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -299,9 +324,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA7C96A723E9ED7600710D21 /* Build configuration list for PBXNativeTarget "Silofit" */;
 			buildPhases = (
+				3262A67201C69AFD1DE988D3 /* [CP] Check Pods Manifest.lock */,
 				CA7C967923E9ED7100710D21 /* Sources */,
 				CA7C967A23E9ED7100710D21 /* Frameworks */,
 				CA7C967B23E9ED7100710D21 /* Resources */,
+				877688E13465BEDEB0F332D9 /* [CP] Embed Pods Frameworks */,
+				24B66AA480BE26B147004A64 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -417,6 +445,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24B66AA480BE26B147004A64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Silofit/Pods-Silofit-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Silofit/Pods-Silofit-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Silofit/Pods-Silofit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3262A67201C69AFD1DE988D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Silofit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		877688E13465BEDEB0F332D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Silofit/Pods-Silofit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Silofit/Pods-Silofit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Silofit/Pods-Silofit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA7C967923E9ED7100710D21 /* Sources */ = {
@@ -624,6 +711,7 @@
 		};
 		CA7C96A823E9ED7600710D21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8FD92F10263AA60C845903A /* Pods-Silofit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -642,6 +730,7 @@
 		};
 		CA7C96A923E9ED7600710D21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584F22A6F8930BC6ED0D7113 /* Pods-Silofit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
