@@ -6,6 +6,8 @@ protocol OnboardingViewInput: class {
 // MARK: View To Presenter Interface
 protocol OnboardingViewOutput: class {
     func viewIsReady()
+    func didClickSignIn()
+    func didClickJoinNow()
 }
 
 // MARK: Presenter To Interactor Interface
@@ -20,7 +22,8 @@ protocol OnboardingInteractorOutput: class {
 
 // MARK: Presenter To Router Interface
 protocol OnboardingRouterInput: class {
-
+    func openSignIn()
+    func openJoinNow()
 }
 
 /*

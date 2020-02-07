@@ -5,8 +5,8 @@ final class OnboardingBuilder {
     private init() { }
 
     // MARK: Builder
-    static func build() -> UIViewController {
-        let router = OnboardingRouter()
+    static func build(navigationController: UINavigationController) -> UIViewController {
+        let router = OnboardingRouter(navigationController: navigationController)
         let interactor = OnboardingInteractor()
         let presenter = OnboardingPresenter(with: interactor, routerInput: router)
 

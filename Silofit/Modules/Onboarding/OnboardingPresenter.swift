@@ -15,8 +15,17 @@ final class OnboardingPresenter {
 // MARK: View To Presenter Protocol
 extension OnboardingPresenter: OnboardingViewOutput {
 	func viewIsReady() {
-
+        viewInput.setupInitialState()
     }
+    
+    func didClickSignIn() {
+        routerInput.openSignIn()
+    }
+    
+    func didClickJoinNow() {
+        routerInput.openJoinNow()
+    }
+    
 }
 
 // MARK: Interactor To Presenter Protocol
