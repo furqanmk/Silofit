@@ -1,32 +1,37 @@
-//
-//  RootCoordinator.swift
-//  Silofit
-//
-//  Created by Furqan Khan on 2/4/20.
-//  Copyright © 2020 Silofit. All rights reserved.
-//
-
 import UIKit
 
 final class RootCoordinator {
+    private var navigationController: UINavigationController!
     private var loggedIn: Bool {
         false
     }
 
-    /// <#Description#>
+    /// Returns the appropriate view controller considering the log-in state of the app
     func start() -> UIViewController {
+        navigationController = UINavigationController()
+        setupNavigationBarStyle()
+        
         if loggedIn {
-            return homeModule()
+            navigationController.setViewControllers([homeModule()], animated: true)
         } else {
-            return onboardingModule()
+            navigationController.setViewControllers([onboardingModule()], animated: true)
         }
+        
+        return navigationController
     }
     
     private func onboardingModule() -> UIViewController {
-        return OnboardingBuilder.build()
+        return OnboardingBuilder.build(navigationController: navigationController)
     }
     
     private func homeModule() -> UIViewController {
         return HomeBuilder.build()
+    }
+    
+    private func setupNavigationBarStyle() {
+        navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController.navigationBar.shadowImage = UIImage()
+        navigationController.navigationBar.isTranslucent = true
+        navigationController.navigationBar.tintColor = Theme.primary
     }
 }
