@@ -1,11 +1,11 @@
 import UIKit
 
-final class LoginViewController: UIViewController {
+final class SignInViewController: UIViewController {
     // MARK: Properties
-    let viewOutput: LoginViewOutput
+    let viewOutput: SignInViewOutput
 
     // MARK: Initalizers
-    init(viewOutput: LoginViewOutput) {
+    init(viewOutput: SignInViewOutput) {
     	self.viewOutput = viewOutput
         super.init(nibName: nil, bundle: nil)
     }
@@ -20,11 +20,15 @@ final class LoginViewController: UIViewController {
         super.viewDidLoad()
         viewOutput.viewIsReady()
     }
+    
+    private func setupView() {
+        view.backgroundColor = Theme.light
+    }
 }
 
 // MARK: Presenter To View Protocol
-extension LoginViewController: LoginViewInput {
+extension SignInViewController: SignInViewInput {
     func setupInitialState() {
-
+        setupView()
     }
 }
