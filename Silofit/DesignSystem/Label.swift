@@ -1,9 +1,17 @@
-//
-//  Label.swift
-//  Silofit
-//
-//  Created by Furqan Khan on 2/8/20.
-//  Copyright © 2020 Silofit. All rights reserved.
-//
+import UIKit
 
-import Foundation
+final class Label: UILabel {
+    init(withTextStyle textStyle: UIFont.TextStyle, text: String, numberOfLines: Int = 0) {
+        super.init(frame: .zero)
+        self.font = UIFont.preferredFont(forTextStyle: textStyle)
+        self.numberOfLines = 0
+        self.adjustsFontForContentSizeCategory = true
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.text = text
+    }
+    
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}

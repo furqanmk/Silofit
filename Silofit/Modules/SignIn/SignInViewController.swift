@@ -1,3 +1,4 @@
+import FBSDKLoginKit
 import UIKit
 
 final class SignInViewController: UIViewController {
@@ -21,8 +22,29 @@ final class SignInViewController: UIViewController {
         viewOutput.viewIsReady()
     }
     
+    // MARK: View
+    private lazy var headlineLabel: UILabel = {
+        Label(withTextStyle: .headline, text: "Hey there, \nwelcome back")
+    }()
+    
+    private lazy var signInButton: FBButton = {
+        FBLoginButton(frame: .zero)
+    }()
+    
     private func setupView() {
         view.backgroundColor = Theme.light
+        view.addSubview(headlineLabel)
+        view.addSubview(signInButton)
+        signInButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        let margins = view.readableContentGuide
+        NSLayoutConstraint.activate([
+            signInButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            signInButton.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
+            signInButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor),
+            headlineLabel.topAnchor.constraint(equalTo: margins.topAnchor, constant: 16),
+            headlineLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor)
+        ])
     }
 }
 
@@ -30,5 +52,19 @@ final class SignInViewController: UIViewController {
 extension SignInViewController: SignInViewInput {
     func setupInitialState() {
         setupView()
+    }
+}
+
+extension SignInViewController: LoginButtonDelegate {
+    func loginButton(_ loginButton: FBLoginButton,
+                     didCompleteWith result: LoginManagerLoginResult?,
+                     error: Error?) {
+        if result?.token != nil {
+            viewOutput.didAuthenticate()
+        }
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+        // 
     }
 }

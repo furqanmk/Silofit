@@ -50,6 +50,15 @@
 		CA7C970023E9F16400710D21 /* OnboardingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C96DC23E9F16400710D21 /* OnboardingProtocols.swift */; };
 		CA7C970123E9F16400710D21 /* OnboardingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C96DD23E9F16400710D21 /* OnboardingBuilder.swift */; };
 		CA7C970223E9F16400710D21 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C96DE23E9F16400710D21 /* OnboardingViewController.swift */; };
+		CA87A6E723EECBD2001AF4F6 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87A6E623EECBD2001AF4F6 /* Label.swift */; };
+		CA87A6E923EED285001AF4F6 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87A6E823EED285001AF4F6 /* OnboardingCoordinator.swift */; };
+		CA87A6EB23EED42C001AF4F6 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87A6EA23EED42C001AF4F6 /* HomeCoordinator.swift */; };
+		CA87A6F323EEEC6A001AF4F6 /* JoinNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87A6EE23EEEC03001AF4F6 /* JoinNowViewController.swift */; };
+		CA87A6F423EEED70001AF4F6 /* JoinNowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87A6ED23EEEC03001AF4F6 /* JoinNowRouter.swift */; };
+		CA87A6F523EEED73001AF4F6 /* JoinNowBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87A6F223EEEC03001AF4F6 /* JoinNowBuilder.swift */; };
+		CA87A6F623EEED76001AF4F6 /* JoinNowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87A6F123EEEC03001AF4F6 /* JoinNowPresenter.swift */; };
+		CA87A6F723EEED78001AF4F6 /* JoinNowProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87A6F023EEEC03001AF4F6 /* JoinNowProtocols.swift */; };
+		CA87A6F823EEED7D001AF4F6 /* JoinNowInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87A6EF23EEEC03001AF4F6 /* JoinNowInteractor.swift */; };
 		CADD34A223ED87C200E35B34 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD34A123ED87C200E35B34 /* Theme.swift */; };
 		CADD34A523ED8F6D00E35B34 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD34A423ED8F6D00E35B34 /* Button.swift */; };
 /* End PBXBuildFile section */
@@ -122,6 +131,15 @@
 		CA7C96DC23E9F16400710D21 /* OnboardingProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingProtocols.swift; sourceTree = "<group>"; };
 		CA7C96DD23E9F16400710D21 /* OnboardingBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingBuilder.swift; sourceTree = "<group>"; };
 		CA7C96DE23E9F16400710D21 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		CA87A6E623EECBD2001AF4F6 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		CA87A6E823EED285001AF4F6 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		CA87A6EA23EED42C001AF4F6 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		CA87A6ED23EEEC03001AF4F6 /* JoinNowRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNowRouter.swift; sourceTree = "<group>"; };
+		CA87A6EE23EEEC03001AF4F6 /* JoinNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNowViewController.swift; sourceTree = "<group>"; };
+		CA87A6EF23EEEC03001AF4F6 /* JoinNowInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNowInteractor.swift; sourceTree = "<group>"; };
+		CA87A6F023EEEC03001AF4F6 /* JoinNowProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNowProtocols.swift; sourceTree = "<group>"; };
+		CA87A6F123EEEC03001AF4F6 /* JoinNowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNowPresenter.swift; sourceTree = "<group>"; };
+		CA87A6F223EEEC03001AF4F6 /* JoinNowBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNowBuilder.swift; sourceTree = "<group>"; };
 		CADD34A123ED87C200E35B34 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		CADD34A423ED8F6D00E35B34 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		D57ACCFFE7FF6A2E8CEFCEB7 /* Pods_Silofit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Silofit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +216,8 @@
 				CADD34A323ED8F5600E35B34 /* DesignSystem */,
 				CA7C968023E9ED7100710D21 /* AppDelegate.swift */,
 				CA7C96B023E9EE4500710D21 /* RootCoordinator.swift */,
+				CA87A6E823EED285001AF4F6 /* OnboardingCoordinator.swift */,
+				CA87A6EA23EED42C001AF4F6 /* HomeCoordinator.swift */,
 				CA7C96B423E9F16400710D21 /* Modules */,
 				CA7C968623E9ED7500710D21 /* Assets.xcassets */,
 				CA7C968B23E9ED7500710D21 /* LaunchScreen.storyboard */,
@@ -229,6 +249,7 @@
 			children = (
 				CA7C96D823E9F16400710D21 /* Onboarding */,
 				CA7C96D123E9F16400710D21 /* SignIn */,
+				CA87A6EC23EEEBF2001AF4F6 /* JoinNow */,
 				CA7C96B523E9F16400710D21 /* Home */,
 				CA7C96BC23E9F16400710D21 /* Details */,
 				CA7C96C323E9F16400710D21 /* Map */,
@@ -315,11 +336,25 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		CA87A6EC23EEEBF2001AF4F6 /* JoinNow */ = {
+			isa = PBXGroup;
+			children = (
+				CA87A6EF23EEEC03001AF4F6 /* JoinNowInteractor.swift */,
+				CA87A6EE23EEEC03001AF4F6 /* JoinNowViewController.swift */,
+				CA87A6F023EEEC03001AF4F6 /* JoinNowProtocols.swift */,
+				CA87A6F123EEEC03001AF4F6 /* JoinNowPresenter.swift */,
+				CA87A6F223EEEC03001AF4F6 /* JoinNowBuilder.swift */,
+				CA87A6ED23EEEC03001AF4F6 /* JoinNowRouter.swift */,
+			);
+			path = JoinNow;
+			sourceTree = "<group>";
+		};
 		CADD34A323ED8F5600E35B34 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
 				CADD34A123ED87C200E35B34 /* Theme.swift */,
 				CADD34A423ED8F6D00E35B34 /* Button.swift */,
+				CA87A6E623EECBD2001AF4F6 /* Label.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -516,15 +551,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA87A6F323EEEC6A001AF4F6 /* JoinNowViewController.swift in Sources */,
 				CA7C96F623E9F16400710D21 /* ListRouter.swift in Sources */,
 				CA7C96F423E9F16400710D21 /* ListPresenter.swift in Sources */,
 				CA7C96EB23E9F16400710D21 /* MapProtocols.swift in Sources */,
 				CA7C96E023E9F16400710D21 /* HomeViewController.swift in Sources */,
 				CA7C96E923E9F16400710D21 /* DetailsInteractor.swift in Sources */,
 				CA7C96F823E9F16400710D21 /* SignInViewController.swift in Sources */,
+				CA87A6F423EEED70001AF4F6 /* JoinNowRouter.swift in Sources */,
+				CA87A6F823EEED7D001AF4F6 /* JoinNowInteractor.swift in Sources */,
 				CA7C970123E9F16400710D21 /* OnboardingBuilder.swift in Sources */,
 				CA7C96EF23E9F16400710D21 /* MapViewController.swift in Sources */,
 				CA7C96E823E9F16400710D21 /* DetailsBuilder.swift in Sources */,
+				CA87A6EB23EED42C001AF4F6 /* HomeCoordinator.swift in Sources */,
 				CA7C96FC23E9F16400710D21 /* SignInRouter.swift in Sources */,
 				CA7C96F123E9F16400710D21 /* ListBuilder.swift in Sources */,
 				CA7C96F523E9F16400710D21 /* ListProtocols.swift in Sources */,
@@ -539,19 +578,24 @@
 				CA7C968123E9ED7100710D21 /* AppDelegate.swift in Sources */,
 				CA7C96E223E9F16400710D21 /* HomeBuilder.swift in Sources */,
 				CA7C96E423E9F16400710D21 /* HomeProtocols.swift in Sources */,
+				CA87A6F723EEED78001AF4F6 /* JoinNowProtocols.swift in Sources */,
 				CA7C96F723E9F16400710D21 /* SignInInteractor.swift in Sources */,
 				CA7C96FA23E9F16400710D21 /* SignInPresenter.swift in Sources */,
 				CA7C96E623E9F16400710D21 /* DetailsPresenter.swift in Sources */,
 				CA7C96FF23E9F16400710D21 /* OnboardingInteractor.swift in Sources */,
+				CA87A6F523EEED73001AF4F6 /* JoinNowBuilder.swift in Sources */,
 				CA7C96ED23E9F16400710D21 /* MapPresenter.swift in Sources */,
 				CA7C96B123E9EE4500710D21 /* RootCoordinator.swift in Sources */,
+				CA87A6E723EECBD2001AF4F6 /* Label.swift in Sources */,
 				CA7C96F923E9F16400710D21 /* SignInProtocols.swift in Sources */,
+				CA87A6E923EED285001AF4F6 /* OnboardingCoordinator.swift in Sources */,
 				CADD34A223ED87C200E35B34 /* Theme.swift in Sources */,
 				CA7C96F223E9F16400710D21 /* ListViewController.swift in Sources */,
 				CA7C96DF23E9F16400710D21 /* HomeInteractor.swift in Sources */,
 				CA7C96E523E9F16400710D21 /* DetailsProtocols.swift in Sources */,
 				CA7C96E323E9F16400710D21 /* HomePresenter.swift in Sources */,
 				CADD34A523ED8F6D00E35B34 /* Button.swift in Sources */,
+				CA87A6F623EEED76001AF4F6 /* JoinNowPresenter.swift in Sources */,
 				CA7C96F023E9F16400710D21 /* MapBuilder.swift in Sources */,
 				CA7C96FE23E9F16400710D21 /* OnboardingPresenter.swift in Sources */,
 				CA7C96EE23E9F16400710D21 /* MapInteractor.swift in Sources */,

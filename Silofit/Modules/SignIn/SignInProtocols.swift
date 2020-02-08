@@ -6,6 +6,7 @@ protocol SignInViewInput: class {
 // MARK: View To Presenter Interface
 protocol SignInViewOutput: class {
     func viewIsReady()
+    func didAuthenticate()
 }
 
 // MARK: Presenter To Interactor Interface
@@ -20,7 +21,7 @@ protocol SignInInteractorOutput: class {
 
 // MARK: Presenter To Router Interface
 protocol SignInRouterInput: class {
-
+    func openHome()
 }
 
 /*

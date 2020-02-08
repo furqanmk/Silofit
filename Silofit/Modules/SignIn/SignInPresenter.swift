@@ -17,6 +17,10 @@ extension SignInPresenter: SignInViewOutput {
 	func viewIsReady() {
         viewInput.setupInitialState()
     }
+    
+    func didAuthenticate() {
+        routerInput.openHome()
+    }
 }
 
 // MARK: Interactor To Presenter Protocol
