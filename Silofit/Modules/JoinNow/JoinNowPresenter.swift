@@ -19,7 +19,7 @@ extension JoinNowPresenter: JoinNowViewOutput {
     }
     
     func didAuthenticate() {
-        routerInput.openHome()
+        routerInput.authenticatedSuccessfully()
     }
 }
 

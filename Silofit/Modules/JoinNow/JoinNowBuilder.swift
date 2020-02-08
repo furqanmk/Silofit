@@ -5,8 +5,8 @@ final class JoinNowBuilder {
     private init() { }
 
     // MARK: Builder
-    static func build() -> UIViewController {
-        let router = JoinNowRouter()
+    static func build(onAuthentication: @escaping () -> Void) -> UIViewController {
+        let router = JoinNowRouter(onAuthentication: onAuthentication)
         let interactor = JoinNowInteractor()
         let presenter = JoinNowPresenter(with: interactor, routerInput: router)
 

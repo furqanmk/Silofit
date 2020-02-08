@@ -21,7 +21,7 @@ protocol SignInInteractorOutput: class {
 
 // MARK: Presenter To Router Interface
 protocol SignInRouterInput: class {
-    func openHome()
+    func authenticatedSuccessfully()
 }
 
 /*

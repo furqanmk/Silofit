@@ -2,9 +2,11 @@ import UIKit
 
 final class OnboardingCoordinator: Coordinator {
     private weak var navigationController: UINavigationController?
+    private let onAuthentication: () -> Void
     
-    init(_ navigationController: UINavigationController?) {
+    init(_ navigationController: UINavigationController?, onAuthentication: @escaping () -> Void) {
         self.navigationController = navigationController
+        self.onAuthentication = onAuthentication
     }
     
     func start() -> UIViewController {
@@ -13,10 +15,14 @@ final class OnboardingCoordinator: Coordinator {
     }
     
     private func onSignIn() {
-        navigationController?.pushViewController(SignInBuilder.build(), animated: true)
+        navigationController?
+            .pushViewController(SignInBuilder.build(onAuthentication: onAuthentication),
+                                animated: true)
     }
     
     private func onJoinNow() {
-        // navigationController?.pushViewController(JoinNowBuilder.build(), animated: true)
+        navigationController?
+            .pushViewController(JoinNowBuilder.build(onAuthentication: onAuthentication),
+                                animated: true)
     }
 }

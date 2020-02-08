@@ -21,7 +21,7 @@ protocol JoinNowInteractorOutput: class {
 
 // MARK: Presenter To Router Interface
 protocol JoinNowRouterInput: class {
-    func openHome()
+    func authenticatedSuccessfully()
 }
 
 /*

@@ -5,8 +5,8 @@ final class SignInBuilder {
     private init() { }
 
     // MARK: Builder
-    static func build() -> UIViewController {
-        let router = SignInRouter()
+    static func build(onAuthentication: @escaping () -> Void) -> UIViewController {
+        let router = SignInRouter(onAuthentication: onAuthentication)
         let interactor = SignInInteractor()
         let presenter = SignInPresenter(with: interactor, routerInput: router)
 

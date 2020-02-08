@@ -2,7 +2,6 @@ import FBSDKCoreKit
 import UIKit
 
 protocol Coordinator: class {
-    init(_ navigationController: UINavigationController?)
     func start() -> UIViewController
 }
 
@@ -24,9 +23,13 @@ final class RootCoordinator: Coordinator {
     func start() -> UIViewController {
         let coordinator: Coordinator = loggedIn ?
             HomeCoordinator(navigationController) :
-            OnboardingCoordinator(navigationController)
+            OnboardingCoordinator(navigationController, onAuthentication: onAuthentication)
         navigationController.setViewControllers([coordinator.start()], animated: true)
         return navigationController
+    }
+    
+    private func onAuthentication() {
+        
     }
     
     private func setupNavigationBarStyle() {

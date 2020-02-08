@@ -19,7 +19,7 @@ extension SignInPresenter: SignInViewOutput {
     }
     
     func didAuthenticate() {
-        routerInput.openHome()
+        routerInput.authenticatedSuccessfully()
     }
 }
 

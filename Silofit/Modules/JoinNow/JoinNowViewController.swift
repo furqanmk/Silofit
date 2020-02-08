@@ -24,7 +24,7 @@ final class JoinNowViewController: UIViewController {
     
     // MARK: View
     private lazy var headlineLabel: UILabel = {
-        Label(withTextStyle: .headline, text: "Hey there, \nwelcome back")
+        Label(withTextStyle: .headline, text: "Welcome, \nsign up to get started")
     }()
     
     private lazy var joinNowButton: FBButton = {
