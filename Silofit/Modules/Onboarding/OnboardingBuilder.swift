@@ -5,8 +5,10 @@ final class OnboardingBuilder {
     private init() { }
 
     // MARK: Builder
-    static func build(navigationController: UINavigationController) -> UIViewController {
-        let router = OnboardingRouter(navigationController: navigationController)
+    static func build(onSignIn: @escaping () -> Void,
+                      onJoinNow: @escaping () -> Void) -> UIViewController {
+        let router = OnboardingRouter(onSignIn: onSignIn,
+                                      onJoinNow: onJoinNow)
         let interactor = OnboardingInteractor()
         let presenter = OnboardingPresenter(with: interactor, routerInput: router)
 

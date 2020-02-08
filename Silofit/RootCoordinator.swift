@@ -1,31 +1,32 @@
+import FBSDKCoreKit
 import UIKit
 
-final class RootCoordinator {
+protocol Coordinator: class {
+    init(_ navigationController: UINavigationController?)
+    func start() -> UIViewController
+}
+
+final class RootCoordinator: Coordinator {
+    // MARK: - Properties
     private var navigationController: UINavigationController!
+    
     private var loggedIn: Bool {
-        false
+        AccessToken.current != nil
+    }
+    
+    // MARK: - Initializers
+    init(_ navigationController: UINavigationController?) {
+        self.navigationController = UINavigationController()
+        self.setupNavigationBarStyle()
     }
 
     /// Returns the appropriate view controller considering the log-in state of the app
     func start() -> UIViewController {
-        navigationController = UINavigationController()
-        setupNavigationBarStyle()
-        
-        if loggedIn {
-            navigationController.setViewControllers([homeModule()], animated: true)
-        } else {
-            navigationController.setViewControllers([onboardingModule()], animated: true)
-        }
-        
+        let coordinator: Coordinator = loggedIn ?
+            HomeCoordinator(navigationController) :
+            OnboardingCoordinator(navigationController)
+        navigationController.setViewControllers([coordinator.start()], animated: true)
         return navigationController
-    }
-    
-    private func onboardingModule() -> UIViewController {
-        return OnboardingBuilder.build(navigationController: navigationController)
-    }
-    
-    private func homeModule() -> UIViewController {
-        return HomeBuilder.build()
     }
     
     private func setupNavigationBarStyle() {

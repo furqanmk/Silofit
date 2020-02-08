@@ -1,21 +1,23 @@
 import UIKit
 
 final class OnboardingRouter {
-    private weak var navigationController: UINavigationController?
+    private let onSignIn: () -> Void
+    private let onJoinNow: () -> Void
     
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
+    init(onSignIn: @escaping () -> Void,
+         onJoinNow: @escaping () -> Void) {
+        self.onSignIn = onSignIn
+        self.onJoinNow = onJoinNow
     }
 }
 
 // MARK: Presenter To Router Protocol
 extension OnboardingRouter: OnboardingRouterInput {
     func openSignIn() {
-        let viewController = SignInBuilder.build()
-        navigationController?.pushViewController(viewController, animated: true)
+        onSignIn()
     }
     
     func openJoinNow() {
-        //
+        onJoinNow()
     }
 }
