@@ -28,7 +28,9 @@ final class JoinNowViewController: UIViewController {
     }()
     
     private lazy var joinNowButton: FBButton = {
-        FBLoginButton(frame: .zero)
+        let loginButton = FBLoginButton(frame: .zero)
+        loginButton.delegate = self
+        return loginButton
     }()
     
     private func setupView() {

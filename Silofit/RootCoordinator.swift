@@ -29,7 +29,8 @@ final class RootCoordinator: Coordinator {
     }
     
     private func onAuthentication() {
-        
+        let coordinator = HomeCoordinator(navigationController)
+        navigationController.setViewControllers([coordinator.start()], animated: true)
     }
     
     private func setupNavigationBarStyle() {
