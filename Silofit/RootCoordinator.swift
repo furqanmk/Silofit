@@ -1,4 +1,5 @@
 import FBSDKCoreKit
+import FBSDKLoginKit
 import UIKit
 
 protocol Coordinator: class {
@@ -13,30 +14,32 @@ final class RootCoordinator: Coordinator {
         AccessToken.current != nil
     }
     
+    private lazy var homeCoordinator: Coordinator = {
+        HomeCoordinator(navigationController, onLogout: onLogout)
+    }()
+    
+    private lazy var onboardingCoordinator: Coordinator = {
+        OnboardingCoordinator(navigationController, onAuthentication: onAuthentication)
+    }()
+    
     // MARK: - Initializers
     init(_ navigationController: UINavigationController?) {
         self.navigationController = UINavigationController()
-        self.setupNavigationBarStyle()
     }
 
     /// Returns the appropriate view controller considering the log-in state of the app
     func start() -> UIViewController {
-        let coordinator: Coordinator = loggedIn ?
-            HomeCoordinator(navigationController) :
-            OnboardingCoordinator(navigationController, onAuthentication: onAuthentication)
+        let coordinator: Coordinator = loggedIn ? homeCoordinator : onboardingCoordinator
         navigationController.setViewControllers([coordinator.start()], animated: true)
         return navigationController
     }
     
     private func onAuthentication() {
-        let coordinator = HomeCoordinator(navigationController)
-        navigationController.setViewControllers([coordinator.start()], animated: true)
+        navigationController.setViewControllers([homeCoordinator.start()], animated: true)
     }
     
-    private func setupNavigationBarStyle() {
-        navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController.navigationBar.shadowImage = UIImage()
-        navigationController.navigationBar.isTranslucent = true
-        navigationController.navigationBar.tintColor = Theme.primary
+    private func onLogout() {
+        LoginManager().logOut()
+        navigationController.setViewControllers([onboardingCoordinator.start()], animated: true)
     }
 }

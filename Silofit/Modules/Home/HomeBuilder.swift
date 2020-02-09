@@ -5,8 +5,8 @@ final class HomeBuilder {
     private init() { }
 
     // MARK: Builder
-    static func build() -> UIViewController {
-        let router = HomeRouter()
+    static func build(onLogout: @escaping () -> Void) -> UIViewController {
+        let router = HomeRouter(onLogout: onLogout)
         let interactor = HomeInteractor()
         let presenter = HomePresenter(with: interactor, routerInput: router)
 

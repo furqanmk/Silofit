@@ -10,8 +10,16 @@ final class OnboardingCoordinator: Coordinator {
     }
     
     func start() -> UIViewController {
-        OnboardingBuilder.build(onSignIn: onSignIn,
-                                onJoinNow: onJoinNow)
+        setupNavigationBar()
+        return OnboardingBuilder.build(onSignIn: onSignIn,
+                                       onJoinNow: onJoinNow)
+    }
+    
+    private func setupNavigationBar() {
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.tintColor = Theme.primary
     }
     
     private func onSignIn() {

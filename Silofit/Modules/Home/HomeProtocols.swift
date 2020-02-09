@@ -1,11 +1,15 @@
 // MARK: Presenter To View Interface
 protocol HomeViewInput: class {
     func setupInitialState()
+    func viewStyleUpdated(with style: ViewStyle)
 }
 
 // MARK: View To Presenter Interface
 protocol HomeViewOutput: class {
+    var toggleTitle: String { get }
     func viewIsReady()
+    func didToggle()
+    func didLogout()
 }
 
 // MARK: Presenter To Interactor Interface
@@ -20,7 +24,7 @@ protocol HomeInteractorOutput: class {
 
 // MARK: Presenter To Router Interface
 protocol HomeRouterInput: class {
-
+    func logout()
 }
 
 /*
