@@ -1,8 +1,19 @@
 import UIKit
+import GoogleMaps
 
 final class MapViewController: UIViewController {
     // MARK: Properties
     let viewOutput: MapViewOutput
+    private lazy var mapView: GMSMapView = {
+        let bounds = viewOutput.spaces.reduce(GMSCoordinateBounds()) { bounds, space in
+            bounds.includingCoordinate(CLLocationCoordinate2D(latitude: space.latitude,
+                                                              longitude: space.longitude))
+        }
+        
+        let mapView = GMSMapView.map(withFrame: view.frame, camera: GMSCameraPosition())
+        GMSCameraUpdate.fit(bounds, withPadding: 60)
+        return mapView
+    }()
 
     // MARK: Initalizers
     init(viewOutput: MapViewOutput) {
@@ -20,11 +31,15 @@ final class MapViewController: UIViewController {
         super.viewDidLoad()
         viewOutput.viewIsReady()
     }
+    
+    private func setupView() {
+        view = mapView
+    }
 }
 
 // MARK: Presenter To View Protocol
 extension MapViewController: MapViewInput {
     func setupInitialState() {
-
+        setupView()
     }
 }

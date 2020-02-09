@@ -1,4 +1,5 @@
 import FBSDKCoreKit
+import GoogleMaps
 import UIKit
 
 @UIApplicationMain
@@ -9,6 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         ApplicationDelegate.shared.application(application,
                                                didFinishLaunchingWithOptions: launchOptions)
+        GMSServices.provideAPIKey("AIzaSyAdLJyjEJpizd-rAnnFXpPcR_u78KC1uaI")
         setupWindow()
         return true
     }

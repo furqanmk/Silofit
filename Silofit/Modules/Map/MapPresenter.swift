@@ -15,7 +15,7 @@ final class MapPresenter {
 // MARK: View To Presenter Protocol
 extension MapPresenter: MapViewOutput {
 	func viewIsReady() {
-
+        viewInput.setupInitialState()
     }
 }
 
