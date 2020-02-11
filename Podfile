@@ -9,8 +9,12 @@ target 'Silofit' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
 
-  # Firebase
+  # Facebook Login
   pod 'FBSDKLoginKit'
+  
+  # Firebase
+  pod 'Firebase/Database'
+  pod 'CodableFirebase'
 
   # Kingfisher
   pod 'Kingfisher'

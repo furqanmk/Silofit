@@ -5,6 +5,7 @@ protocol MapViewInput: class {
 
 // MARK: View To Presenter Interface
 protocol MapViewOutput: class {
+    var spaces: [Space] { get }
     func viewIsReady()
 }
 

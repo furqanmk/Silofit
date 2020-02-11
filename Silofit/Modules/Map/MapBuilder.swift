@@ -5,10 +5,10 @@ final class MapBuilder {
     private init() { }
 
     // MARK: Builder
-    static func build() -> UIViewController {
+    static func build(with spaces: [Space]) -> UIViewController {
         let router = MapRouter()
         let interactor = MapInteractor()
-        let presenter = MapPresenter(with: interactor, routerInput: router)
+        let presenter = MapPresenter(with: interactor, routerInput: router, spaces: spaces)
 
         let viewController = MapViewController(viewOutput: presenter)
         presenter.viewInput = viewController

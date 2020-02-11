@@ -6,6 +6,7 @@ protocol HomeViewInput: class {
 
 // MARK: View To Presenter Interface
 protocol HomeViewOutput: class {
+    var spaces: [Space] { get }
     var toggleTitle: String { get }
     func viewIsReady()
     func didToggle()
@@ -14,12 +15,12 @@ protocol HomeViewOutput: class {
 
 // MARK: Presenter To Interactor Interface
 protocol HomeInteractorInput: class {
-
+    func fetchSpaces()
 }
 
 // MARK: Interactor To Presenter Interface
 protocol HomeInteractorOutput: class {
-
+    func didFetchSpaces(_ spaces: [String: Space])
 }
 
 // MARK: Presenter To Router Interface

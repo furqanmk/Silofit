@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A05225472671D757E0AA98E4 /* Pods_Silofit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57ACCFFE7FF6A2E8CEFCEB7 /* Pods_Silofit.framework */; };
+		CA13E20C23F0950F00614A58 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13E20B23F0950F00614A58 /* Space.swift */; };
+		CA13E20E23F09FC700614A58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA13E20D23F09FC700614A58 /* GoogleService-Info.plist */; };
 		CA7C968123E9ED7100710D21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C968023E9ED7100710D21 /* AppDelegate.swift */; };
 		CA7C968723E9ED7500710D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7C968623E9ED7500710D21 /* Assets.xcassets */; };
 		CA7C968D23E9ED7500710D21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7C968B23E9ED7500710D21 /* LaunchScreen.storyboard */; };
@@ -61,6 +63,7 @@
 		CA87A6F823EEED7D001AF4F6 /* JoinNowInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87A6EF23EEEC03001AF4F6 /* JoinNowInteractor.swift */; };
 		CADD34A223ED87C200E35B34 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD34A123ED87C200E35B34 /* Theme.swift */; };
 		CADD34A523ED8F6D00E35B34 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD34A423ED8F6D00E35B34 /* Button.swift */; };
+		CAE8731C23F2B0360070BC2C /* SpaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE8731B23F2B0360070BC2C /* SpaceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 /* Begin PBXFileReference section */
 		584F22A6F8930BC6ED0D7113 /* Pods-Silofit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Silofit.release.xcconfig"; path = "Target Support Files/Pods-Silofit/Pods-Silofit.release.xcconfig"; sourceTree = "<group>"; };
 		A8FD92F10263AA60C845903A /* Pods-Silofit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Silofit.debug.xcconfig"; path = "Target Support Files/Pods-Silofit/Pods-Silofit.debug.xcconfig"; sourceTree = "<group>"; };
+		CA13E20B23F0950F00614A58 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
+		CA13E20D23F09FC700614A58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CA13E20F23F0A5F400614A58 /* Silofit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Silofit.entitlements; sourceTree = "<group>"; };
 		CA7C967D23E9ED7100710D21 /* Silofit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Silofit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7C968023E9ED7100710D21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA7C968623E9ED7500710D21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,6 +148,7 @@
 		CA87A6F223EEEC03001AF4F6 /* JoinNowBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNowBuilder.swift; sourceTree = "<group>"; };
 		CADD34A123ED87C200E35B34 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		CADD34A423ED8F6D00E35B34 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		CAE8731B23F2B0360070BC2C /* SpaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCell.swift; sourceTree = "<group>"; };
 		D57ACCFFE7FF6A2E8CEFCEB7 /* Pods_Silofit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Silofit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -213,15 +220,18 @@
 		CA7C967F23E9ED7100710D21 /* Silofit */ = {
 			isa = PBXGroup;
 			children = (
+				CA13E20F23F0A5F400614A58 /* Silofit.entitlements */,
 				CADD34A323ED8F5600E35B34 /* DesignSystem */,
+				CA7C96B423E9F16400710D21 /* Modules */,
 				CA7C968023E9ED7100710D21 /* AppDelegate.swift */,
 				CA7C96B023E9EE4500710D21 /* RootCoordinator.swift */,
 				CA87A6E823EED285001AF4F6 /* OnboardingCoordinator.swift */,
 				CA87A6EA23EED42C001AF4F6 /* HomeCoordinator.swift */,
-				CA7C96B423E9F16400710D21 /* Modules */,
 				CA7C968623E9ED7500710D21 /* Assets.xcassets */,
 				CA7C968B23E9ED7500710D21 /* LaunchScreen.storyboard */,
 				CA7C968E23E9ED7500710D21 /* Info.plist */,
+				CA13E20D23F09FC700614A58 /* GoogleService-Info.plist */,
+				CA13E20B23F0950F00614A58 /* Space.swift */,
 			);
 			path = Silofit;
 			sourceTree = "<group>";
@@ -306,6 +316,7 @@
 				CA7C96CE23E9F16400710D21 /* ListPresenter.swift */,
 				CA7C96CF23E9F16400710D21 /* ListProtocols.swift */,
 				CA7C96D023E9F16400710D21 /* ListRouter.swift */,
+				CAE8731B23F2B0360070BC2C /* SpaceCell.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -468,6 +479,7 @@
 			files = (
 				CA7C968D23E9ED7500710D21 /* LaunchScreen.storyboard in Resources */,
 				CA7C968723E9ED7500710D21 /* Assets.xcassets in Resources */,
+				CA13E20E23F09FC700614A58 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +563,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA13E20C23F0950F00614A58 /* Space.swift in Sources */,
+				CAE8731C23F2B0360070BC2C /* SpaceCell.swift in Sources */,
 				CA87A6F323EEEC6A001AF4F6 /* JoinNowViewController.swift in Sources */,
 				CA7C96F623E9F16400710D21 /* ListRouter.swift in Sources */,
 				CA7C96F423E9F16400710D21 /* ListPresenter.swift in Sources */,
@@ -765,6 +779,7 @@
 			baseConfigurationReference = A8FD92F10263AA60C845903A /* Pods-Silofit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Silofit/Silofit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Silofit/Info.plist;
@@ -784,6 +799,7 @@
 			baseConfigurationReference = 584F22A6F8930BC6ED0D7113 /* Pods-Silofit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Silofit/Silofit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Silofit/Info.plist;

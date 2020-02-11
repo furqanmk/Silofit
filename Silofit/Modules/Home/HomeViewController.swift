@@ -19,11 +19,11 @@ final class HomeViewController: UIViewController {
     }()
     
     private lazy var mapViewController: UIViewController = {
-        MapBuilder.build()
+        MapBuilder.build(with: viewOutput.spaces)
     }()
     
     private lazy var listViewController: UIViewController = {
-        ListBuilder.build()
+        ListBuilder.build(with: viewOutput.spaces)
     }()
 
     // MARK: Initalizers
@@ -46,7 +46,6 @@ final class HomeViewController: UIViewController {
     private func setupView() {
         view.backgroundColor = Theme.light
         setupNavigationBar()
-        showMap()
     }
     
     private func setupNavigationBar() {
@@ -79,6 +78,10 @@ final class HomeViewController: UIViewController {
 
 // MARK: Presenter To View Protocol
 extension HomeViewController: HomeViewInput {
+    func update(with spaces: [Space]) {
+        showMap()
+    }
+    
     func setupInitialState() {
         setupView()
     }

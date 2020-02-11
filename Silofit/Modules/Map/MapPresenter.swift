@@ -3,12 +3,15 @@ final class MapPresenter {
     weak var viewInput: MapViewInput!
     let interactorInput: MapInteractorInput
     let routerInput: MapRouterInput
+    let spaces: [Space]
 
     // MARK: Initalizers
     init(with interactorInput: MapInteractorInput,
-    	 routerInput: MapRouterInput) {
+    	 routerInput: MapRouterInput,
+         spaces: [Space]) {
     	self.interactorInput = interactorInput
         self.routerInput = routerInput
+        self.spaces = spaces
     }
 }
 

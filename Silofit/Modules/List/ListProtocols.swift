@@ -5,6 +5,7 @@ protocol ListViewInput: class {
 
 // MARK: View To Presenter Interface
 protocol ListViewOutput: class {
+    var spaces: [Space] { get }
     func viewIsReady()
 }
 
